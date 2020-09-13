@@ -14,42 +14,34 @@
 
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
   <!-- Place favicon.ico in the root directory -->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
-  <meta name="theme-color" content="#fafafa">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+
 </head>
 
+<div class="card">
 <body>
 
-  <div class="card">
-    <main>
-        <header>    
-            <div class="card__title">
-            <h1>Onde estou?</h1>
-            </div>
+        
+        <header class="bgimg w3-display-container w3-grayscale-min">    
+          <div class="w3-display-middle w3-center">
+            <span class="w3-text-black w3-hide-small" style="font-size:70px">Onde estou?<br></span>
+          <button onclick="getLocation()"class="w3-button w3-xxlarge w3-black">Localizar</button>
+        </div>
         </header>
 
-        <div class="card__button"> 
-        <button onclick="getLocation()">Clique aqui</button>
-        </div>
-
-        <div class="card__map">
-            <div id="map_canvas"></div>
-        </div>
-
-        <div class="card__details" id="location"></div>
-
-    </main>
-        <footter>
-            <div class="card__author">
-            <h4>Desenvolvimento Web Full Stack - PUC MG - 2020</h4>
-            </div>
+        <div id="map_canvas"></div>
+        <div class="w3-center w3-black w3-padding-20 w3-large" id="location"></div>
+        
+        <footer class="w3-center w3-black w3-padding-20 w3-small">
+          <p>Desenvolvimento Web Full Stack - PUC MG/2020 - Juliana Fernandes</a></p>
         </footer>
-</div>
-</body>
 
+</body>
+</div>
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>

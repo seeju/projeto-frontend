@@ -2,42 +2,30 @@
 @media (min-width: 992px) {
 }
 
-
-.card {
-  font-family: Arial, Helvetica, sans-serif;
-  color: #222;
+body, html {
+  height:70%;
+  font-family: "Amatic SC", sans-serif;
 }
 
-.card__title {
-  font-size: 20px;
-  background-color: #627A14;
-  padding: 2vh 2vw;
-  height: 15vh;
-  box-sizing: border-box;
-  color: #fff;
-}
-
-body>main {
-  height: 80vh;
-}
-
-footer {
-  height: 5vh;
-  background-color: #B3CB65;
+.bgimg {
+  background-size: cover;
+  background-color: white;
+  min-height: 90%;
 }
 
 .card {
-  float: left;
-  background-color: #fbfbfb;
-  width: 80vw;
-  height: 85vh;
+  height:100%;
+  font-family: "Amatic SC", sans-serif;
+  background-size: cover;
+  background-color: white;
+  min-height: 90%;
 }
+
 
 
 #map_canvas { 
+  height: 100%;
+  width: 100%;
   float: center;
-  width: 50vw;
-  height: 50vh;;
 }
 
-body,h1 {font-family: "Raleway", sans-serif}
