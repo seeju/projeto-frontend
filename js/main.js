@@ -1,5 +1,4 @@
 var x=document.getElementById("location");
-
 function getLocation(){
     {
     if ('geolocation' in navigator)
