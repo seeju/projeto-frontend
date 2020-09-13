@@ -25,11 +25,15 @@ function showPosition(position){
         zoom: 8,
         mapTypeId: google.maps.MapTypeId.ROADMAP
       };
-      var map = new google.maps.Map(document.getElementById("map_canvas"),
-          mapOptions)
-    //component.src = 'https://maps.google.com/maps?='+ lat + lon + '&t=&z=13&ie=UTF8&iwloc=&output=embed';
+    var map = new google.maps.Map(document.getElementById("map_canvas"),mapOptions);
+    var ponto = new google.maps.LatLng(lat,lon);
+    var marker = new google.maps.Marker({
+        position: ponto,
+        map: map,
+        title:"Você está aqui",
+        });
     x.innerHTML="Latitude: " + lat + "<br>Longitude: " + lon + "<br>Altitude: " + alt + " metros"; 
-    //indow.location.href = 'https://maps.google.com/maps?='+ lat + lon + '&t=&z=13&ie=UTF8&iwloc=&output=embed';
+    
 }
   
 function showError(error) {
@@ -61,3 +65,4 @@ function initialize(position) {
     var map = new google.maps.Map(document.getElementById("map_canvas"),
         mapOptions);
   }
+
