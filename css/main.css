@@ -1,9 +1,15 @@
-body {
+
+@media (min-width: 992px) {
+}
+
+
+.card {
   font-family: Arial, Helvetica, sans-serif;
   color: #222;
 }
 
-body>header {
+.card__title {
+  font-size: 20px;
   background-color: #627A14;
   padding: 2vh 2vw;
   height: 15vh;
@@ -15,41 +21,23 @@ body>main {
   height: 80vh;
 }
 
-body>footer {
+footer {
   height: 5vh;
   background-color: #B3CB65;
 }
 
-h1.app-title {
-  font-size: 20px;
-}
-
-section.main-feature {
+.card {
   float: left;
   background-color: #fbfbfb;
   width: 80vw;
   height: 85vh;
 }
 
-aside.secundary-feature {
-  float: right;
-  background-color: #6F4D8F;
-  width: 20vw;
-  height: 80vh;
-  color: #fff;
-}
 
 #map_canvas { 
-  width: 50vw;
-  height: 50vh;
   float: center;
+  width: 50vw;
+  height: 50vh;;
 }
 
 body,h1 {font-family: "Raleway", sans-serif}
-body, html {height: 100%}
-.bgimg {
-  background-image: url('/w3images/forestbridge.jpg');
-  min-height: 100%;
-  background-position: center;
-  background-size: cover;
-}

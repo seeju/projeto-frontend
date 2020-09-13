@@ -24,33 +24,32 @@
 <body>
 
   <div class="card">
-
-    <div class="card__title">
-      <header>
-        <h1>Onde estou?</h1>
-      </header>
-    </div>
-
     <main>
-      <div class="card__button">
-        <button onclick="getLocation()">Localizar</button>
-      </div>
+        <header>    
+            <div class="card__title">
+            <h1>Onde estou?</h1>
+            </div>
+        </header>
 
-      <div class="card__map">
-        <span id="map_canvas"></span>
-      </div>
+        <div class="card__button"> 
+        <button onclick="getLocation()">Clique aqui</button>
+        </div>
 
-      <div class="card__details">
-        <p id="location"></p>
-      </div>
+        <div class="card__map">
+            <div id="map_canvas"></div>
+        </div>
+
+        <div class="card__details" id="location"></div>
 
     </main>
-
-  </div>
-  
-
-  <footer>Desenvolvimento Web Full Stack - PUC MG - 2020</footer>
+        <footter>
+            <div class="card__author">
+            <h4>Desenvolvimento Web Full Stack - PUC MG - 2020</h4>
+            </div>
+        </footer>
+</div>
 </body>
+
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
