@@ -22,7 +22,7 @@ function showPosition(position){
     var alt = position.coords.altitude;
     var mapOptions = {
         center: new google.maps.LatLng(lat, lon),
-        zoom: 8,
+        zoom: 18,
         mapTypeId: google.maps.MapTypeId.ROADMAP
       };
     var map = new google.maps.Map(document.getElementById("map_canvas"),mapOptions);

@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Exercício 01</title>
+  <title>Projeto Front-end</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -14,25 +14,40 @@
 
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
   <!-- Place favicon.ico in the root directory -->
-
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
-
   <meta name="theme-color" content="#fafafa">
 </head>
 
 <body>
 
-  <header>
-    <h1 class="app-title">Localização</h1>
-  </header>
+  <div class="card">
+
+    <div class="card__title">
+      <header>
+        <h1>Onde estou?</h1>
+      </header>
+    </div>
+
+    <main>
+      <div class="card__button">
+        <button onclick="getLocation()">Localizar</button>
+      </div>
+
+      <div class="card__map">
+        <span id="map_canvas"></span>
+      </div>
+
+      <div class="card__details">
+        <p id="location"></p>
+      </div>
+
+    </main>
+
+  </div>
   
-  <main class="main-feature">
-    <p id="location">Clique no botão para obter sua localização:</p>
-    <button onclick="getLocation()">Clique aqui</button>
-    <div id="map_canvas"></div>
-  </main>
 
   <footer>Desenvolvimento Web Full Stack - PUC MG - 2020</footer>
 </body>
@@ -46,6 +61,6 @@
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
-  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=YOURKEY"></script>
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDh-0veopPPvfTAzDW_AjznufEhpSL4PG8"></script>
 
 </html>

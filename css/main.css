@@ -40,7 +40,16 @@ aside.secundary-feature {
 }
 
 #map_canvas { 
-  height: 50%;
-  width: 50;
+  width: 50vw;
+  height: 50vh;
   float: center;
+}
+
+body,h1 {font-family: "Raleway", sans-serif}
+body, html {height: 100%}
+.bgimg {
+  background-image: url('/w3images/forestbridge.jpg');
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
 }
