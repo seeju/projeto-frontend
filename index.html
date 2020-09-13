@@ -14,45 +14,35 @@
 
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
   <!-- Place favicon.ico in the root directory -->
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
-  <meta name="theme-color" content="#fafafa">
+  <link rel="stylesheet" href="assets/css/normalize.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+
 </head>
 
+<div class="card">
 <body>
 
-  <div class="card">
+        
+        <header class="bgimg w3-display-container w3-grayscale-min">    
+          <div class="w3-display-middle w3-center">
+            <span class="w3-text-black w3-hide-small" style="font-size:70px">Onde estou?<br></span>
+          <button onclick="getLocation()"class="w3-button w3-xxlarge w3-black">Localizar</button>
+        </div>
+        </header>
 
-    <div class="card__title">
-      <header>
-        <h1>Onde estou?</h1>
-      </header>
-    </div>
+        <div id="map_canvas"></div>
+        <div class="w3-center w3-black w3-padding-20 w3-large" id="location"></div>
+        
+        <footer class="w3-center w3-black w3-padding-20 w3-small">
+          <p>Desenvolvimento Web Full Stack - PUC MG/2020 - Juliana Fernandes</a></p>
+        </footer>
 
-    <main>
-      <div class="card__button">
-        <button onclick="getLocation()">Localizar</button>
-      </div>
-
-      <div class="card__map">
-        <span id="map_canvas"></span>
-      </div>
-
-      <div class="card__details">
-        <p id="location"></p>
-      </div>
-
-    </main>
-
-  </div>
-  
-
-  <footer>Desenvolvimento Web Full Stack - PUC MG - 2020</footer>
 </body>
+</div>
 
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
     window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
     ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
@@ -61,6 +51,6 @@
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
-  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDh-0veopPPvfTAzDW_AjznufEhpSL4PG8"></script>
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=YOURKEY"></script>
 
 </html>
