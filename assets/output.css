@@ -1,6 +1,5 @@
-
 .card {
-  height:70%;
+  height: 70%;
   font-family: "Amatic SC", sans-serif;
   background-size: cover;
   background-color: white;
@@ -12,7 +11,6 @@
   font-size: 35px;
   text-align: center;
   margin-top: 10px;
-
 }
 
 .card__details {
@@ -22,8 +20,7 @@
   text-align: center;
 }
 
-
-.card__map { 
+.card__map {
   height: 100%;
   width: 100%;
   text-align: center;
@@ -31,25 +28,24 @@
 
 .card__footer {
   font-size: 15px;
-  color:white;
+  color: white;
   background-color: black;
   text-align: center;
 }
 
-
 body {
-	height: 70%;
-	font-family: "Amatic SC", sans-serif;
+  height: 70%;
+  font-family: "Amatic SC", sans-serif;
 }
+
 html {
-	height: 70%;
+  height: 70%;
 }
 
 @media (min-width: 992px) {
-  
-  .card__map { 
+  .card__map {
     height: 90%;
-    width: 50%;
+    width: 40%;
     margin-left: 350px;
     margin-bottom: 20px;
   }
@@ -58,16 +54,16 @@ html {
     font-size: 50px;
     text-align: center;
     margin-top: 10px;
-  
   }
 
   body {
     height: 70%;
     font-family: "Amatic SC", sans-serif;
   }
+
   html {
     height: 50%;
   }
-
-
 }
+
+/*# sourceMappingURL=output.css.map */

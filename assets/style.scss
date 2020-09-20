@@ -1,0 +1,57 @@
+.card {
+	height: 70%;
+	font-family: "Amatic SC", sans-serif;
+	background-size: cover;
+	background-color: white;
+	min-height: 90%;
+	background-size: cover;
+}
+.card__title {
+	font-size: 35px;
+	text-align: center;
+	margin-top: 10px;
+}
+.card__details {
+	font-size: 20px;
+	color: white;
+	background-color: black;
+	text-align: center;
+}
+.card__map {
+	height: 100%;
+	width: 100%;
+	text-align: center;
+}
+.card__footer {
+	font-size: 15px;
+	color: white;
+	background-color: black;
+	text-align: center;
+}
+body {
+	height: 70%;
+	font-family: "Amatic SC", sans-serif;
+}
+html {
+	height: 70%;
+}
+@media (min-width: 992px) {
+	.card__map {
+		height: 90%;
+		width: 40%;
+		margin-left: 350px;
+		margin-bottom: 20px;
+	}
+	.card__title {
+		font-size: 50px;
+		text-align: center;
+		margin-top: 10px;
+	}
+	body {
+		height: 70%;
+		font-family: "Amatic SC", sans-serif;
+	}
+	html {
+		height: 50%;
+	}
+}

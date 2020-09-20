@@ -15,7 +15,7 @@
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
-  <link rel="stylesheet" href="assets/css/normalize.css">
+
   <link rel="stylesheet" href="assets/css/main.css">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
@@ -23,34 +23,35 @@
 </head>
 
 <div class="card">
-<body>
+  <body>
+    <div class="card__title">
+      <header>
+          <p>Onde estou?<br><p>
+      <button onclick="getLocation()" class="w3-button w3-xxlarge w3-black">Localizar</button>
+      </header>
+  </div>
 
-        
-        <header class="bgimg w3-display-container w3-grayscale-min">    
-          <div class="w3-display-middle w3-center">
-            <span class="w3-text-black w3-hide-small" style="font-size:70px">Onde estou?<br></span>
-          <button onclick="getLocation()"class="w3-button w3-xxlarge w3-black">Localizar</button>
-        </div>
-        </header>
+    <div class="card__map" id="map_canvas"></div>
+    <div class="card__details" id="location"></div>
 
-        <div id="map_canvas"></div>
-        <div class="w3-center w3-black w3-padding-20 w3-large" id="location"></div>
-        
-        <footer class="w3-center w3-black w3-padding-20 w3-small">
-          <p>Desenvolvimento Web Full Stack - PUC MG/2020 - Juliana Fernandes</a></p>
-        </footer>
 
-</body>
+    <div class="card__footer">
+      <p>Desenvolvimento Web Full Stack - PUC MG/2020 - Juliana Fernandes</a></p>
+    </footer>
+     </div>
+
+  </body>
 </div>
 
-  <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
-  </script>
-  <script src="https://www.google-analytics.com/analytics.js" async></script>
-  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
-  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=YOURKEY"></script>
+<script>
+  window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+  ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+</script>
+<script src="https://www.google-analytics.com/analytics.js" async></script>
+<script src="js/vendor/modernizr-3.11.2.min.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
+<script type="text/javascript"
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCHxhQw5aa4oFiTynFZREyI2Bj6szpELaQ"></script>
 
 </html>
