@@ -32,7 +32,7 @@ function showPosition(position){
         map: map,
         title:"Você está aqui",
         });
-    x.innerHTML="Latitude: " + lat + "<br>Longitude: " + lon + "<br>Altitude: " + alt + " metros"; 
+    x.innerHTML=`Latitude:  ${lat} <br>Longitude: ${lon}  <br>Altitude: ${alt} metros`; 
     
 }
   
@@ -53,16 +53,3 @@ function showError(error) {
         break;
       }
 }
-
-function initialize(position) {
-    var lat = position.coords.latitude;
-    var lon = position.coords.longitude;
-    var mapOptions = {
-      center: new google.maps.LatLng(lat, lon),
-      zoom: 8,
-      mapTypeId: google.maps.MapTypeId.ROADMAP
-    };
-    var map = new google.maps.Map(document.getElementById("map_canvas"),
-        mapOptions);
-  }
-
