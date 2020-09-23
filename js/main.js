@@ -17,12 +17,12 @@ function getLocation(){
 }
 
 function showPosition(position){
-    var lat = position.coords.latitude;
-    var lon = position.coords.longitude;
-    var alt = position.coords.altitude;
+    const coordinates = [position.coords.latitude,position.coords.longitude,position.coords.altitude];
+    let [lat,lon,alt] = coordinates;
+
     var mapOptions = {
         center: new google.maps.LatLng(lat, lon),
-        zoom: 18,
+        zoom: 15,
         mapTypeId: google.maps.MapTypeId.ROADMAP
       };
     var map = new google.maps.Map(document.getElementById("map_canvas"),mapOptions);
