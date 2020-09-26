@@ -1,4 +1,5 @@
 var x=document.getElementById("location");
+
 function getLocation(){
     {
     if ('geolocation' in navigator)
@@ -36,9 +37,8 @@ function showPosition(position){
 
     url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=imperial&APPID=9d83e3a82c05f8f05996b636f17a770d`;
     fetchApi(url);
-
+  
     x.innerHTML=`Latitude:  ${lat} <br>Longitude: ${lon}  <br>Altitude: ${alt} metros`; 
-    
 }
   
 function showError(error) {
@@ -67,9 +67,10 @@ function fetchApi(url) {
   })
   .then((data) => {
     let tempInCelsius = ((5/9) * (data.main.temp-32)).toFixed(1);
-    temp.innerText = tempInCelsius;
+    temp.innerHTML = `Temperatura:  ${tempInCelsius}°C`;
   })
   .catch((err) => {
-    temp.innerText = `Dados não disponíveis`;
+    temp.innerHTML = `Dados não disponíveis`;
   })
 }
+
