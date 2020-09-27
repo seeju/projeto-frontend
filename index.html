@@ -33,10 +33,11 @@
       </header>
     </div>
 
-    <div class="card__map" id="map_canvas" title="Mapa extraído do Google Maps mostrando a localização do usuário"></div>
+    <div class="card__map" id="map_canvas" title="Mapa extraído do Google Maps mostrando a localização do usuário">
+    </div>
     <div class="card__details" id="location"></div>
     <div class="card__details" id="location">
-    <span></span>
+      <span></span>
     </div>
 
     <div class="card__footer">
@@ -45,7 +46,7 @@
     </div>
 
   </body>
-  
+
 </div>
 
 <script>
@@ -58,5 +59,15 @@
 <script src="js/main.js"></script>
 <script type="text/javascript"
   src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBTEnbiIx3-GmWlAw1IKVdlfurFttMjICY"></script>
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker
+      .register('/sw.js')
+      .then(function () { console.log("Service Worker Registered"); });
+  }
+</script>
+
+
+
 
 </html>
