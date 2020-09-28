@@ -22,30 +22,29 @@
 
 </head>
 
+
 <div class="card">
+  <div class="card__title">
+    <header>
+      <p>Onde estou?<br><p>
+      <button onclick="getLocation()" class="w3-button w3-xxlarge w3-black">Localizar</button>
+    </header>
+  </div>
 
-  <body>
-    <div class="card__title">
-      <header>
-        <p>Onde estou?<br>
-        <p>
-          <button onclick="getLocation()" class="w3-button w3-xxlarge w3-black">Localizar</button>
-      </header>
-    </div>
-
-    <div class="card__map" id="map_canvas" title="Mapa extraído do Google Maps mostrando a localização do usuário">
-    </div>
-    <div class="card__details" id="location"></div>
-    <div class="card__details" id="location">
-      <span></span>
-    </div>
+  
+    <body>
+        <div role="complementary" class="card__map" id="map_canvas" title="Mapa extraído do Google Maps mostrando a localização do usuário"></div>
+        <div role="main" class="card__details" id="location"></div>
+        <div role="main" class="card__details" id="location">
+          <span></span>
+        </div>
+    </body>
 
     <div class="card__footer">
+      <footer>
       <p>Desenvolvimento Web Full Stack - PUC MG/2020 - Juliana Fernandes</a></p>
       </footer>
     </div>
-
-  </body>
 
 </div>
 
